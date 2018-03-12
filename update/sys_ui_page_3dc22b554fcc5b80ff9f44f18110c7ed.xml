@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_regho_swshopv2_swshopv2.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:requires name="angularjs.min.1.6.6.jsdbx" />
+<!--<g:requires name="angular-route.jsdbx" />-->
+<script src="x_regho_swshop.ngTable"></script>>
+<script src="angular-sanitize.jsdbx"></script>>
+    <script src="x_regho_swshop.angular.ng-modules.jsdbx"></script>  
+    <script src="x_regho_swshop.AngularController.jsdbx"></script>  	
+<script src="x_regho_swshopv2.myApp.jsdbx"></script>		
+<div ng-app="myApp">
+  <div ng-controller="demoController as demo">
+    <h2 class="page-header">Loading data - External array</h2>
+    <div class="bs-callout bs-callout-info">
+      <h4>Overview</h4>
+      <p>Hand <code>NgTableParams</code> a custom <code>getData</code> function that it will call to load data into the table. Typically you will use this option to load server-side data</p>
+    </div>
+    <table ng-table="demo.tableParams" class="table table-bordered table-striped table-condensed">
+      <tr ng-repeat="row in $data track by row.id">
+        <td data-title="'Installation At'" filter="{installationAt: 'text'}" sortable="'installationAt'">{{row.installationAt}}</td>
+        <td data-title="'Admin Email'" filter="{adminEmail: 'text'}" sortable="'adminEmail'">{{row.adminEmail}}</td>
+        <td data-title="'Powered By'" filter="{poweredBy: 'text'}" sortable="'poweredBy'">{{row.poweredBy}}</td>
+        <td data-title="'Powered By Icon'" filter="{poweredByIcon: 'text'}" sortable="'poweredByIcon'">{{row.poweredByIcon}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</j:jelly>]]></html>
+        <name>swshopv2</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>jhan0435</sys_created_by>
+        <sys_created_on>2018-02-02 12:08:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3dc22b554fcc5b80ff9f44f18110c7ed</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>swshopv2</sys_name>
+        <sys_package display_value="swshopV2" source="x_regho_swshopv2">34b26fd94f4c5b80ff9f44f18110c734</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="swshopV2">34b26fd94f4c5b80ff9f44f18110c734</sys_scope>
+        <sys_update_name>sys_ui_page_3dc22b554fcc5b80ff9f44f18110c7ed</sys_update_name>
+        <sys_updated_by>jhan0435</sys_updated_by>
+        <sys_updated_on>2018-02-06 09:22:50</sys_updated_on>
+    </sys_ui_page>
+</record_update>
